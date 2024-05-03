@@ -1,0 +1,14 @@
+local player = game:GetService("Players").LocalPlayer
+player:Kick("Well hello, why did you click? I warned you :( if this is accidental, then ok, good luck with the game!!!")
+
+sound = Instance.new("Sound",workspace)
+sound.Name = "By: DarkOSVO"
+sound.SoundId = "rbxassetid://7702280571"
+sound:Play()
+sound.Looped = true
+repeat
+wait(0.01)
+until sound.IsLoaded == true
+wait(2)
+de = Instance.new("DistortionSoundEffect",sound)
+de.Level = 0.8
