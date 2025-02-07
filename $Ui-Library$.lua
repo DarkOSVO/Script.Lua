@@ -70,12 +70,21 @@ local themeStyles = {
         TextColor = Color3.fromRGB(0,0,0),
         ElementColor = Color3.fromRGB(224, 224, 224)
     },
-    BloodTheme = {
-        SchemeColor = Color3.fromRGB(0, 102, 0),
-        Background = Color3.fromRGB(0, 0, 0),
-        Header = Color3.fromRGB(0, 0, 255),
-        TextColor = Color3.fromRGB(0, 255, 0),
-        ElementColor = Color3.fromRGB(0, 0, 0)
+  BloodTheme = {
+    SchemeColor = Color3.fromRGB(0, 102, 0),
+    Background = 'rbxassetid://82327176142603', -- Используем ID изображения
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(0, 255, 0),
+    ElementColor = Color3.fromRGB(0, 0, 0)
+     },
+
+local ScreenGui = Instance.new("ScreenGui")
+local BackgroundImage = Instance.new("ImageLabel", ScreenGui)
+
+BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Занимает весь экран
+BackgroundImage.Position = UDim2.new(0, 0, 0, 0)
+BackgroundImage.Image = BloodTheme.Background
+BackgroundImage.BackgroundTransparency = 1 -- Делаем фон прозрачным
     },
     GrapeTheme = {
         SchemeColor = Color3.fromRGB(166, 71, 214),
