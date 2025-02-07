@@ -70,12 +70,43 @@ local themeStyles = {
         TextColor = Color3.fromRGB(0,0,0),
         ElementColor = Color3.fromRGB(224, 224, 224)
     },
-  BloodTheme = {
-        SchemeColor = Color3.fromRGB(0, 102, 0),
-        Background = Color3.fromRGB(0, 0, 0),
-        Header = Color3.fromRGB(0, 0, 0),
-        TextColor = Color3.fromRGB(0, 255, 0),
-        ElementColor = Color3.fromRGB(0, 0, 0)
+  local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Frame.Parent = ScreenGui
+Frame.Size = UDim2.new(1, 0, 1, 0)
+
+-- Установка изображения фона
+local ImageLabel = Instance.new("ImageLabel")
+ImageLabel.Parent = Frame
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Image = "rbxassetid://82327176142603"
+ImageLabel.BackgroundTransparency = 1 -- чтобы скрыть фон
+
+ BloodTheme = {
+    SchemeColor = Color3.fromRGB(0, 102, 0),
+    Background = "rbxassetid://82327176142603", 
+    Header = Color3.fromRGB(0, 0, 0),
+    TextColor = Color3.fromRGB(0, 255, 0),
+    ElementColor = Color3.fromRGB(0, 0, 0)
+}
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+
+ScreenGui.Name = "BloodUI"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Size = UDim2.new(1, 0, 1, 0)
+MainFrame.BackgroundTransparency = 1  -- Делаем основной фрейм прозрачным
+MainFrame.Parent = ScreenGui
+
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Image = BloodTheme.Background
+ImageLabel.BackgroundTransparency = 1  -- Делаем изображение фона прозрачным
+ImageLabel.Parent = MainFrame
     },
     GrapeTheme = {
         SchemeColor = Color3.fromRGB(166, 71, 214),
