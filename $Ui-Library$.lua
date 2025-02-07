@@ -80,9 +80,6 @@ local themeStyles = {
 
 local ScreenGui = Instance.new("ScreenGui")
 local BackgroundImage = Instance.new("ImageLabel", ScreenGui)
-
-BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Занимает весь экран
-BackgroundImage.Position = UDim2.new(0, 0, 0, 0)
 BackgroundImage.Image = BloodTheme.Background
 BackgroundImage.BackgroundTransparency = 1 -- Делаем фон прозрачным
 	
