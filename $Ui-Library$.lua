@@ -76,13 +76,6 @@ local themeStyles = {
     Header = Color3.fromRGB(0, 0, 0),
     TextColor = Color3.fromRGB(0, 255, 0),
     ElementColor = Color3.fromRGB(0, 0, 0)
-	},
-
-local ScreenGui = Instance.new("ScreenGui")
-local BackgroundImage = Instance.new("ImageLabel", ScreenGui)
-BackgroundImage.Image = BloodTheme.Background
-BackgroundImage.BackgroundTransparency = 1 -- Делаем фон прозрачным
-	
     },
     GrapeTheme = {
         SchemeColor = Color3.fromRGB(166, 71, 214),
