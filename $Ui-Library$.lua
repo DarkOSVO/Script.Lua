@@ -128,7 +128,7 @@ local SettingsT = {
 
 }
 
-local Name = "Conso1eConfig.JSON"
+local Name = "MeetlookConfig.JSON"
 
 pcall(function()
 
@@ -838,7 +838,7 @@ function Kavo.CreateLib(kavName, themeList)
                 TextBox.ClearTextOnFocus = false
                 TextBox.Font = Enum.Font.Gotham
                 TextBox.PlaceholderColor3 = Color3.fromRGB(themeList.SchemeColor.r * 255 - 19, themeList.SchemeColor.g * 255 - 26, themeList.SchemeColor.b * 255 - 35)
-                TextBox.PlaceholderText = "Type here!"
+                TextBox.PlaceholderText = "..."
                 TextBox.Text = ""
                 TextBox.TextColor3 = themeList.SchemeColor
                 TextBox.TextSize = 12.000
